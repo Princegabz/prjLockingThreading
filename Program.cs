@@ -9,7 +9,7 @@ namespace MprjLockingThreading // Note: actual namespace depends on the project 
             Thread.CurrentThread.Name = "Main";
             LoadFile();
 
-            Thread t1 = new Thread(LoadFile);
+            Thread t1 = new Thread(LoadFile);//
             t1.Name = "Thread 1";
             Thread t2 = new Thread(LoadFile);
             t2.Name = "Thread 2";
